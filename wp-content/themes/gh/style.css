@@ -1,0 +1,413 @@
+/*
+Theme Name: GeekHub
+Theme URI: http://wordpress.org/extend/themes/geekhub
+Author: Anton Ember
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, flexible-header
+Text Domain: geekhub
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:15px "Trebuchet MS", sans-serif; background:#fff url("images/body_bg.jpg") left top repeat-x; color:#4B7589; }
+body.home                   { font:15px arial, sans-serif; background:#fff url("images/index_body_bg.jpg") left top repeat-x; }
+body.team     		{ font-family: arial; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:16px Arial, sans-serif; color:#E11D5D; text-decoration:none; }
+a:hover                        { text-decoration:underline;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {
+	margin:0 auto;
+	overflow:hidden;
+	width:900px;
+}
+.home .wrapper{
+	background:url("images/home_header_bg.png") no-repeat scroll center 145px transparent;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+	overflow:hidden;
+	margin: 21px 0 0;
+}
+.header span{
+	display:none;
+}
+.home .header {
+	padding:20px 0 0;
+	margin:0 0 25px;
+	
+}
+.header h1 {
+	float:left;
+	width:167px;
+	height:71px;
+}
+.header h1 a img {
+	display:block;
+}
+.soc{
+	overflow:hidden;
+	text-align:center;
+}
+.soc a{
+	display:block;
+}
+.header .soc{
+	margin:24px 0 0;
+	padding:0 0 0 95px;
+}
+.header .soc li {
+	float: left;
+	width:24px;
+	height:24px;
+	margin:0 9px 0 0;
+}
+	
+.header .soc a {
+	background: url(images/header_soc.png) no-repeat;
+	width:24px;
+	height:24px;
+}
+.header .soc .facebook{
+	background-position:left top;
+}
+.header .soc .vk{
+	background-position:-32px top;
+}
+.header .soc .twitter{
+	background-position:-64px top;
+}
+.header .soc .youtube{
+	background-position:-96px top;
+}
+.header .soc .vimeo{
+	background-position:right top;
+}
+.home .header .registration{
+	padding:75px 0 0;
+	border-top:1px solid #8EA8B3;
+	display:block;
+	overflow:hidden;
+	font:53px "Trebuchet MS";
+	color:#246987;
+	text-align:center;
+	margin:45px 0 27px;
+}
+.home .header .will-reg{
+	display: block;
+    overflow: hidden;
+    text-align: center;
+	padding: 24px 0 0 24px;
+	height:56px;
+	background:url("images/header_link_reg_bg.png") no-repeat center top;
+	font:26px "Trebuchet MS";
+	color:#fff;
+	text-decoration:none;
+	margin:0 0 37px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.nav{
+    float: right;
+	padding:30px 20px 0 0;
+}
+.nav li {
+	font-size:15px;
+	text-transform: uppercase; 
+	float:left;
+	padding: 0 20px 40px 0;
+
+}
+.nav li a {
+	font-size:15px;
+	color:#396375;
+	text-decoration:none;
+	font-family:"Myriad Pro";
+	text-transform:uppercase;
+}
+.nav li a:hover,
+.nav li.active a {
+	color:#E01E5E;
+}
+.nav li.active {
+	background:url("images/active_bg.png") center bottom no-repeat ;
+	
+}
+.home .nav li.active{
+	background:none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+h2{
+	font:47px "Trebuchet MS";
+	border-bottom: 1px solid #f0f0f0 ;
+	margin: 25px 0;
+	padding:0 0 10px;
+}
+.home h2{
+	text-transform: uppercase;
+	text-align:center;
+	font:19px sans-serif;  
+	letter-spacing: 10px;
+}
+.team h2{
+	font:56px "Myriad Pro";
+	border-bottom: 1px solid #D6D6D6 ;
+}
+h3 { 
+	font:28px "Myriad Pro";
+	color: #E92777;
+}
+.team h3 { 
+	width:155px;
+	margin:59px 0 0;
+}
+.about .content img{
+	display:block;
+	overflow:hidden;
+	padding:8px;
+	border: 2px dashed #4C7689;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin:0 0 0 35px;
+}
+.course-title{
+	overflow:hidden;
+}
+.course-title li{
+	width:290px;
+	padding:0 0 50px 145px;
+	background:url("images/content_ul_li_bg.png") no-repeat ;
+	float: left;
+}
+.course-title .frontend-cms{
+	background-position:left top;
+}
+.course-title .advanced-cms{
+	background-position:left top;
+}
+.course-title .advanced-php{
+	background-position:left top;
+}
+.course-title .basic-java{
+	background-position:left top;
+}
+.course-title .java-for-android{
+	background-position:left top;
+}
+.course-title .project-managment{
+	background-position:left top;
+}
+.course-title .qualite-assurance{
+	background-position:left top;
+}
+.course-title .technecal-english{
+	background-position:left top;
+}
+.home .content .course-title p{
+	padding:0;
+}
+.home .content p{
+	padding:37px 80px 0 60px;
+}
+.about .content p{
+	float:right;
+	width: 534px;
+	padding:0 30px;
+	margin:0 0 20px;
+}
+.team span{
+	font-weight:normal;
+	font:13px Arial;
+	color: #F2753D;
+}
+.team  .content img {
+	display:block;
+	width:170px;
+	height:169px;
+	padding:15px 20px 0 15px;
+}
+.person-first,
+.person-second{
+	overflow:hidden;
+	
+}
+.person-first p,
+.person-second p{
+	width:450px;
+}
+.person-first h3{
+	float: right;
+	text-align:right;
+}
+.person-first span{
+	float:right;
+}
+.person-first img{
+	float:right;
+}
+.person-first p{
+	float:right;
+	text-align:left;
+	padding: 50px 35px 0 0;
+} 
+.person-second {
+	overflow:hidden;
+}
+.person-second div{
+	float:right;
+}
+.person-second h3{
+	overflow:hidden;
+	text-align:left;
+	
+}
+.person-second span{
+	float:left;
+}
+.person-second p{
+	text-align:right ;
+	padding: 50px 0 0 35px;
+	float:left;
+} 
+.person-second img{
+	float:left;
+}
+
+.content dt{
+	font-size:28px ;
+	color:#E92777;
+	text-align:center;
+	padding:0 0 7px 0; 
+	overflow:hidden;
+}
+.content dd{
+	overflow:hidden;
+	font-size:28px;
+	text-align:center;
+	padding:0 0 35px 0;
+}
+.content .soc{
+	padding:0 0 0 159px;
+}
+.content .soc li {
+	width:48px;
+	height:48px;
+	float:left;
+	margin:0 18px 0 0;
+}
+.content .soc li a {
+	background:url(../images/content_soc.png) no-repeat;
+	width:48px;
+	height:48px;
+	display:block;
+}
+.content .soc .facebook{
+	background-position:left top;
+}
+.content .soc .vk{
+	background-position:-66px top;
+}
+.content .soc .twitter{
+	background-position:-132px top;
+}
+.content .soc a:hover{
+	background:url(../images/content_soc_hover.png) no-repeat;
+}
+.content .soc .facebook:hover{
+	background-position:left top;
+}
+.content .soc .vk:hover{
+	background-position:-66px top;
+}
+.content .soc .twitter:hover{
+	background-position:-132px top;
+}
+.map{
+	width: 382px;
+	height: 287px; 
+}
+dt.map-block{
+	width:415px;
+}
+dd.map-block{
+	border: 2px dashed #4C7689;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+    float: left;
+    padding: 15px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer { 
+	clear:both;
+	overflow: hidden;
+	font-size:11px;
+	color: #396375;
+	border-top: 1px solid #A7C3CF;
+	margin:65px 0 0;
+	padding:20px 0 20px;
+}
+.footer .nav{
+	float:left;
+	padding: 0;
+}
+.footer .nav li {
+	padding: 0 20px 0 0;
+
+}
+.footer .nav li a {
+	text-decoration:none;	
+	font-size:11px;
+}
+.footer .nav  li a:hover,
+.footer .nav  li.active a {
+	color:#F85B4E;
+}
+.footer address {
+	float:right;
+	font-size:11px;
+	color:#A7C3CF;
+}
