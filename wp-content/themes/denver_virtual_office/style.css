@@ -1,0 +1,444 @@
+/*
+Theme Name: DVO
+Theme URI: http://wordpress.org/extend/themes/geekhub
+Author: Anton Ember
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu, flexible-header
+Text Domain: denver_virtual_office
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:14px arial, sans-serif; background:#fff  url(images/dvo/body_bg.jpg) left -28px repeat-x; color:#000; margin:-28px 0 0;}
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:14px arial, sans-serif; color:#3D4F95; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrap {
+	width:1058px;
+	margin:0 auto;
+	background:#FFF;
+	overflow:hidden;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+	overflow:hidden;
+	margin:0 0 25px;
+}
+.header h1 {
+	float:left;
+	width:190px;
+	height:58px;
+	margin:25px 0 0 35px;
+}
+.header h1 a img {
+	display:block;
+}
+.header .phone{
+	float:right;
+	margin:35px 5px 0 0;
+	color:#2094EB;
+	padding: 5px 0 5px 26px;
+	font-size:24px;
+	background:url("images/dvo/header_span_bg.png") left center no-repeat;
+}
+.baner{
+	overflow:hidden;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.header .home-baner{
+	float:left;
+	display:block;
+	width:683px;
+	height:390px;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	margin:0 10px 0 0;
+}
+.header .img-video{
+	overflow:hidden;
+	margin: 0 0 10px 5px;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.header .slog{
+	background:url("images/dvo/heder-home-img.jpg") left top no-repeat;
+	margin:0;
+	display: block;
+    overflow: hidden;
+    text-align: left;
+    width: 337px;
+	color:#DF0014;
+	font:24px "Myriad Pro";
+	padding: 110px 0 20px 23px;
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header .nav {
+	overflow:hidden;
+	padding:30px 0 30px 125px;
+	text-align:center;
+}
+.header .nav li {
+	float:left;
+	margin:0 0 0 0px;
+	display:inline-block;
+	
+	
+}
+.header .nav li a {
+	font-size:18px;
+	color:#000;
+	text-decoration:none;
+	display: block;
+	border-right:1px solid #ccc;
+	padding: 7px 15px;
+}
+.header .nav .last a{
+	border:none;
+}
+.header .nav li a:hover{
+	color:#1B3492;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content{
+	overflow:hidden;
+	padding:0 35px;
+}
+h2{
+	color:#3D4F95;
+	font-size:32px;
+	font-weight:normal;
+	padding:0 0 20px;
+}
+.content .services{
+	overflow:hidden;
+	border-bottom:1px solid #D4D4D4;
+	margin:0 0 20px;
+}
+.content .services li{
+	width: 25%;
+	float:left;
+	color:#7B7B7B;
+	font-size:10px;
+}
+.services span{
+	display:block;
+	float:left;
+	height:66px;
+	width:85px;
+	background:url("images/dvo/home_services_bg.png") left top no-repeat;
+}
+.content .services li p{
+	overflow:hidden;
+	width: 125px;
+}
+.content .services .mailboxes span{
+	background-position:-15px 0;
+}
+.content .services .phone span{
+	background-position: -92px 0;
+}
+.content  .services .office span{
+	background-position: -173px 0;
+}
+.content  .services .rooms span{
+	 background-position: -277px 0;
+}
+.services h4{
+	font-size:16px;
+	color:#000;
+}
+.home-content-p{
+	overflow:hidden;
+	padding:0 0 25px;
+}
+.home-content-h2{
+	color:#000;
+	font-size:20px;
+	margin:0 35px;
+	float:left;
+}
+
+.create {
+    clear: both;
+	overflow:hidden;
+	background:url("images/dvo/home_create_bg.png") left top no-repeat;
+}
+.create li{
+	float:left;
+	text-align:center;
+}
+.create li a{
+	display:block;
+	width:280px;
+	height:165px;
+	font:25px "Times New Roman";
+	color:#000;
+	overflow:hidden;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 315px;
+}
+.create li a span{
+	display:block;
+	margin: 0 0 0 165px;
+	width:124px;
+}
+.create li.central a{
+	padding: 15px 0 0;
+	width:315px;
+}
+
+.create li.central a span{
+	text-align:center;
+	width:340px;
+	padding:0;
+	margin:0;
+	
+}
+.create li.central a .price{
+	text-align:right;
+	display:block;
+	width:124px;
+	margin: 10px 0 0 185px;
+}
+.create li.central a .price{
+	font-size:17px;
+	color:#fff;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0 100px;
+    width: 194px;
+}
+.create li a:hover{
+	text-decoration:none;
+}
+.page-post-p{
+	margin:0 0 10px;
+}
+.page-content-box{
+	background:#FFF6D4;
+	padding:15px 0 20px 10px;
+	font-size: 15px;
+}
+.page-content-box h3{
+	overflow:hidden;
+	padding:0 0 15px ;
+	font-size:20px;
+}
+.page-content-box ul{
+	padding:0 0 0 20px;
+}
+.page-content-box ul li{
+	list-style: disc outside none;
+	margin:0px 10px 5px
+}
+.about-content-p{
+	margin: 0 0 20px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.sidebar{
+	float:left;
+	width:290px;
+	padding:50px 35px 0 40px;
+}
+.sidebar-box li{
+	padding: 12px 25px 12px 15px;
+	border:1px solid #D1D1D1;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background:url("images/dvo/sidebar_address_bg.png") no-repeat;
+}
+.sidebar-box h4{
+	font-weight:normal;
+	color:#7A7B7F;
+	font-size:14px;
+}
+.sidebar-box span{
+	color:#3D4F95;
+	font-size:24px;
+}
+.sidebar-box .v-o{
+	background-position: 245px 19px;
+}
+.sidebar-box .skype{
+	background-position: 245px -50px;
+}
+.sidebar-box .mail{
+	background-position: 245px -124px;
+}
+.sidebar-box .mail span{
+	font-size:14px;
+	
+}
+.services{
+	overflow:hidden;
+	padding:0 0 15px;
+	margin:15px 0;
+}
+.sidebar .services li{
+    border-bottom: 1px solid #D4D4D4;
+    color: #7B7B7B;
+    font-size: 10px;
+    padding: 10px 5px;
+	overflow:hidden;
+}
+.sidebar  .services .office{
+	border:none;
+}
+.sidebar .services .mailboxes span{
+	background-position:-15px 0;
+}
+.sidebar .services .phone span{
+	background-position: -107px 0;
+}
+.sidebar  .services .office span{
+	background-position: -188px 0
+}
+.sidebar  .services .rooms span{
+	 background-position: -277px 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer {
+	clear:both;
+    overflow: hidden;
+	margin:40px 35px 0;
+	padding: 30px 35px 20px;
+	border-top:1px solid #D4D4D4;
+	
+}
+.home-footer{
+	border:none;
+	padding:0 0 20px;
+}
+.footer .soc{
+	float:left;
+	margin:3px 10px 0 0;
+}
+.footer .soc li{
+	float:left;
+	margin:0 13px 0 0;
+}
+.footer .soc-explanation {
+	float:left;
+    padding: 9px 10px 0 0;
+	font-weight:bold;
+}
+.footer .soc li a{
+	display:block;
+	height:29px;
+	width:29px;
+	background:url("images/dvo/footer_links_bg.png") no-repeat;
+
+}
+.footer .soc .twitt a{
+	background-position:0 0;
+}
+.footer .soc .fb a{
+	background-position:-41px 0; 
+}
+.footer .soc .rss a{
+	background-position:-84px 0;
+}
+.footer .categories{
+	float:left;
+	margin:0 0 0 88px;
+	overflow:hidden;
+}
+.footer .categories .footer-box {
+	float:left;
+	color:#359BCB;
+	font-size:12px;
+	width:33%;
+}
+.footer .categories .footer-box h3{
+	color:#000;
+	font-size:12px;
+	margin: 0 0 5px;
+}
+.footer span.copywritting{
+	float:right;
+	color:#838383;
+	font-size:12px;
+}
+.home-footer .home-footer-link{
+	border-left: 1px solid #D4D4D4;
+    color: #949494;
+    overflow: hidden;
+    text-align: left;
+	display:block;
+	padding:9px 0 9px 20px;
+	margin:0 0 0 10px;
+	
+}
+.fb-like{
+	width:155px;
+	background:#000;
+	margin:0 25px;
+	float:right;
+	height:10px;
+}
