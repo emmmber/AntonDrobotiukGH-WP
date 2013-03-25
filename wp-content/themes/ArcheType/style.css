@@ -1,0 +1,227 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:-25px 0 0; font:14px Verdana, sans-serif; background:#000 ; color:#fff; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:14px Verdana, sans-serif; color:#00CBFF; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper{
+	width:890px;
+	margin:0 auto;
+	background:url("images/wrap_bg.png") left top repeat, url("images/content_wrap_bg.png") center bottom no-repeat;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header{
+	overflow:hidden;
+	background:url("images/header_bg.jpg") left top no-repeat;
+}
+h1{
+	overflow:hidden;
+	margin: 0 0 4px;
+}
+h1 a{
+	display:block;
+	width:330px; 
+	height:57px;
+}
+.home-ban{
+	overflow:hidden;
+	display:block;
+	width:888px;
+	height:275px;
+	border:1px solid #666;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.nav-wrap{
+	overflow:hidden;
+	background:url("images/nav_bg.jpg") left top repeat-x;
+	border:1px solid #999;
+	padding:4px 5px;
+	margin:0 0 18px;
+}
+.nav{
+	overflow: hidden;
+	background:url("images/nav_li_bg.jpg") left top repeat-x;
+	border:1px solid #000;
+}
+.nav li{
+	float:left;
+}
+.nav li a {
+	display:block;
+	font:16px arial ;
+	color:#fff;
+	padding:5px 30px;
+	margin: 7px 0 6px;
+	border-right:2px solid #6B6B6B
+}
+.nav .login{
+	background:url("images/login_bg.png") left top no-repeat;
+    float: right;
+    overflow: hidden;
+	margin:0 10px 0 0;
+}
+.nav .login a{
+    height: 42px;
+    width: 42px;
+	padding:0;
+	margin:0;
+	border:none;
+
+}
+.nav li.active {
+	background:url("images/nav_li_active_bg.jpg") left top repeat-x;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content{
+	overflow:hidden;
+	padding:25px 30px 0 30px;
+}
+h2{
+	font:bold 18px Verdana;
+	margin:0 0 25px;
+	overflow:hidden
+}
+h2 strong{
+	color:#33CBFF;
+}
+.post{
+	margin:0 0 35px;
+}
+.post .more{
+	display:block;
+	width:106px;
+	height:23px;
+	background:url("images/content_more_bg.png") center center no-repeat;
+	float:right;
+}
+.post img{
+	float:left;
+	display:block;
+}
+.post p{
+	overflow:hidden;
+}
+.img-post h2{
+	margin:0;
+}
+.img-post img{
+	margin:4px 15px 0 0;
+}
+.content .img-post .img-post-link{
+	font-style: italic;
+	display: block;
+    margin: 14px 0 0;
+}
+.little-post{
+	width: 40%;	
+	margin:0;
+}
+.left-little-post{
+	float:left;
+}
+.right-little-post{
+	overflow:hidden;
+	padding:0 0 0 65px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.sidebar{
+	float:right;
+	width:250px;
+	padding:0 30px;
+	border-left:2px solid #999;
+	margin: 25px 0;
+}
+.sidebar h3{
+	font:bold 20px Verdana;
+	text-align:center;
+	background:url("images/sidebar_h3_bg.png") right center no-repeat;
+	margin:0 0 30px;
+}
+h3 strong{
+	color:#33CBFF;
+}
+.sidebar ul{
+	overflow:hidden;
+}
+.sidebar ul li{
+	background:#131313;
+	padding:10px 0;
+	overflow:hidden;
+	margin:0 0 9px;
+	border:1px solid #333;
+	text-align:center;
+	background:url("images/sidebar_li_bg.png") left center no-repeat;
+}
+.sidebar ul .forum{
+	background-position:7px 7px;
+}
+.sidebar ul .dolor{
+	background-position:7px -38px;
+}
+.sidebar ul .aestic{
+	background-position:7px -82px;
+}
+.sidebar ul .menit{
+	background-position:7px -128px;
+}
+.sidebar ul .et{
+	background-position:7px -173px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer{
+	clear:both;
+    overflow: hidden;
+	margin:5px 90px;
+	padding:15px 0 0;
+	border-top:1px solid #999;
+	text-align:center;
+}
+.footer span{
+	font-size:11px;
+}

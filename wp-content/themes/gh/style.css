@@ -10,7 +10,7 @@ Text Domain: geekhub
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:15px "Trebuchet MS", sans-serif; background:#fff url("images/body_bg.jpg") left top repeat-x; color:#4B7589; }
+body                            { padding:0; margin:0; font:15px "Trebuchet MS", sans-serif; background:#fff url("images/dvo/body_bg.jpg") left top repeat-x; color:#4B7589; }
 body.home                   { font:15px arial, sans-serif; background:#fff url("images/index_body_bg.jpg") left top repeat-x; }
 body.team     		{ font-family: arial; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
